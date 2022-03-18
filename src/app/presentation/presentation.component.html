@@ -1,0 +1,17 @@
+<div class="container">
+    <form [formGroup]="editorForm">
+        <ckeditor formControlName="paragraph" 
+                type="divarea"
+                [config]="config"></ckeditor>
+                <button type="button" (click)="addContent()">Add Content</button>
+    </form>
+    <button type="button" (click)="setCode()">Show code</button>
+    <!-- <div id="page-container">
+        <div class="container" [innerHTML]="htmlCode">
+            
+        </div>
+    </div> -->
+    <textarea *ngIf="htmlCode !== undefined" style="width: 100%; height: 400px" [value]="htmlCode">
+
+    </textarea>
+</div>

@@ -1,0 +1,25 @@
+<div class="container">
+    <h3>Video Component</h3>
+    <form [formGroup]="editorForm">
+        <input type="text" formControlName="page" placeholder="Página">
+        <input type="text" formControlName="title" placeholder="Título">
+        <input type="text" formControlName="link1" placeholder="Link1">
+        <input type="text" formControlName="link2" placeholder="Link2">
+        <input type="text" formControlName="order" placeholder="Order">
+        <hr>
+        <ckeditor formControlName="element"
+                type="divarea"
+                [config]="config"></ckeditor>
+        <button type="button" (click)="addParagraph()">Add Paragraph</button>
+        <button type="button" (click)="addList()">Add List</button>
+    </form>
+    <button type="button" (click)="setCode()">Show code</button>
+    <!-- <div id="page-container">
+        <div class="container" [innerHTML]="htmlCode">
+
+        </div>
+    </div> -->
+    <textarea *ngIf="htmlCode !== undefined" style="width: 100%; height: 400px" [value]="htmlCode">
+
+    </textarea>
+</div>

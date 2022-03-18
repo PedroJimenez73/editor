@@ -1,0 +1,12 @@
+<div class="container">
+    <h3>Parser</h3>
+    <form [formGroup]="editorForm">
+        <textarea formControlName="paragraph" style="width: 100%; height: 200px"></textarea>
+        <button type="button" (click)="addParagraph()">Add Paragraph</button>
+    </form>
+    <button type="button" (click)="setCode()">Show code</button>
+
+    <textarea *ngIf="htmlCode !== undefined" style="width: 100%; height: 400px" [value]="htmlCode">
+
+    </textarea>
+</div>

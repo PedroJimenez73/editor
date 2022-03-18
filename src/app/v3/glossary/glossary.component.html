@@ -1,0 +1,21 @@
+<div class="container">
+    <h3>Glossary Component</h3>
+    <form [formGroup]="editorForm">
+        <input type="text" formControlName="page" placeholder="Página">
+        <hr>
+        <ckeditor formControlName="elements"
+                type="divarea"
+                [config]="config"></ckeditor>
+        <button type="button" (click)="addTerms()">Add Terms</button>
+        <button type="button" (click)="addTexts()">Add Texts</button>
+    </form>
+    <button type="button" (click)="setCode()">Show code</button>
+    <!-- <div id="page-container">
+        <div class="container" [innerHTML]="htmlCode">
+
+        </div>
+    </div> -->
+    <textarea *ngIf="htmlCode !== undefined" style="width: 100%; height: 400px" [value]="htmlCode">
+
+    </textarea>
+</div>

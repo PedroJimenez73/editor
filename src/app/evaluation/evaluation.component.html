@@ -1,0 +1,19 @@
+<div class="container">
+    <form [formGroup]="editorForm">
+        <input type="text" formControlName="enunciate" placeholder="Enunciate">
+        <input type="text" formControlName="questionNumber" placeholder="Number">
+        <hr>
+        <input type="text" formControlName="answer">
+        <input type="checkbox" formControlName="correct">
+        <button type="button" (click)="addContent()">Add Content</button>
+    </form>
+    <button type="button" (click)="setCode()">Show code</button>
+    <!-- <div id="page-container">
+        <div class="container" [innerHTML]="htmlCode">
+
+        </div>
+    </div> -->
+    <textarea *ngIf="htmlCode !== undefined" style="width: 100%; height: 400px" [value]="htmlCode">
+
+    </textarea>
+</div>
