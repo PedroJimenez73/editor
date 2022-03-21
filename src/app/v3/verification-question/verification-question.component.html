@@ -1,0 +1,27 @@
+<div class="container">
+    <h3>Verification Question Component</h3>
+    <form [formGroup]="editorForm">
+        <input type="text" formControlName="page" placeholder="Página">
+        <input type="text" formControlName="title" placeholder="Título">
+        <input type="text" formControlName="counter" placeholder="Nº Cuestionario">
+        <hr>
+        <ckeditor formControlName="ennunciate"
+                type="divarea"
+                [config]="config"></ckeditor>
+        <ckeditor formControlName="elements"
+                type="divarea"
+                [config]="config"></ckeditor>
+        <input type="text" formControlName="corrects" placeholder="Correctas">
+        <hr>
+        <button type="button" (click)="addData()">Add</button>
+    </form>
+    <!-- <button type="button" (click)="setCode()">Show code</button> -->
+    <!-- <div id="page-container">
+        <div class="container" [innerHTML]="htmlCode">
+
+        </div>
+    </div> -->
+    <textarea *ngIf="htmlCode !== undefined" style="width: 100%; height: 400px" [value]="htmlCode">
+
+    </textarea>
+</div>

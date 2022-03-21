@@ -31,6 +31,8 @@ import { V3EvaluationComponent } from './v3/v3-evaluation/v3-evaluation.componen
 import { TestComponent } from './parser/test/test.component';
 import { V1av3textPicComponent } from './v1av3/v1av3text-pic/v1av3text-pic.component';
 import { V1av3accordionComponent } from './v1av3/v1av3accordion/v1av3accordion.component';
+import { VerificationQuestionComponent } from './v3/verification-question/verification-question.component';
+import { TabsComponent } from './v3/tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { V1av3accordionComponent } from './v1av3/v1av3accordion/v1av3accordion.c
     V3EvaluationComponent,
     TestComponent,
     V1av3textPicComponent,
-    V1av3accordionComponent
+    V1av3accordionComponent,
+    VerificationQuestionComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,

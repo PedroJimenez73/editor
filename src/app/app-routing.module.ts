@@ -26,6 +26,8 @@ import { V3EvaluationComponent } from './v3/v3-evaluation/v3-evaluation.componen
 import { TestComponent } from './parser/test/test.component';
 import { V1av3textPicComponent } from './v1av3/v1av3text-pic/v1av3text-pic.component';
 import { V1av3accordionComponent } from './v1av3/v1av3accordion/v1av3accordion.component';
+import { VerificationQuestionComponent } from './v3/verification-question/verification-question.component';
+import { TabsComponent } from './v3/tabs/tabs.component';
 
 const routes: Routes = [
     {path:'', component: HomeComponent},
@@ -52,6 +54,8 @@ const routes: Routes = [
     {path:'interest-links', component: InterestLinksComponent},
     {path:'bibliography', component: BibliographyComponent},
     {path:'evaluation-json', component: V3EvaluationComponent},
+    {path:'verification-question', component: VerificationQuestionComponent},
+    {path:'tabs', component: TabsComponent},
     // v1 a v3
     {path:'v1-v3-text-pic', component: V1av3textPicComponent},
     {path:'v1-v3-accordion', component: V1av3accordionComponent},
