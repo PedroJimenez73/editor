@@ -28,6 +28,8 @@ import { V1av3textPicComponent } from './v1av3/v1av3text-pic/v1av3text-pic.compo
 import { V1av3accordionComponent } from './v1av3/v1av3accordion/v1av3accordion.component';
 import { VerificationQuestionComponent } from './v3/verification-question/verification-question.component';
 import { TabsComponent } from './v3/tabs/tabs.component';
+import { SeeAnswerComponent } from './v3/see-answer/see-answer.component';
+import { RotaryCardsComponent } from './v3/rotary-cards/rotary-cards.component';
 
 const routes: Routes = [
     {path:'', component: HomeComponent},
@@ -49,6 +51,8 @@ const routes: Routes = [
     {path:'meta-slide', component: MetaSlideComponent},
     {path:'text-pic', component: TextPicComponent},
     {path:'accordion-pic', component: AccordionPicComponent},
+    {path:'see-answer', component: SeeAnswerComponent},
+    {path:'rotary-cards', component: RotaryCardsComponent},
     {path:'video', component: VideoComponent},
     {path:'glossary-json', component: GlossaryComponent},
     {path:'interest-links', component: InterestLinksComponent},

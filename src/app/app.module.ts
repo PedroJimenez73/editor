@@ -33,6 +33,8 @@ import { V1av3textPicComponent } from './v1av3/v1av3text-pic/v1av3text-pic.compo
 import { V1av3accordionComponent } from './v1av3/v1av3accordion/v1av3accordion.component';
 import { VerificationQuestionComponent } from './v3/verification-question/verification-question.component';
 import { TabsComponent } from './v3/tabs/tabs.component';
+import { SeeAnswerComponent } from './v3/see-answer/see-answer.component';
+import { RotaryCardsComponent } from './v3/rotary-cards/rotary-cards.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +66,9 @@ import { TabsComponent } from './v3/tabs/tabs.component';
     V1av3textPicComponent,
     V1av3accordionComponent,
     VerificationQuestionComponent,
-    TabsComponent
+    TabsComponent,
+    SeeAnswerComponent,
+    RotaryCardsComponent
   ],
   imports: [
     BrowserModule,

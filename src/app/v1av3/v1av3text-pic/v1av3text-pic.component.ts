@@ -151,6 +151,7 @@ export class V1av3textPicComponent implements OnInit {
             }
 
         ]
+    },
 `;
 
     }
